@@ -181,7 +181,7 @@ a {
     font-size: 12px;
     top: -35px;
     right: 0;
-    transform: translateX(65%);
+    transform: translateX(60%);
   }
   
   .skill-per::after{
