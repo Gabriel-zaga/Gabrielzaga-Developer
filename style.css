@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #121f33;
+    
+}
+a {
+    
+    text-decoration: none;
+    margin: 50px;
+    
+    
+  }
+  
+  a:hover {
+    border-bottom: 1px solid crimson;
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: crimson;
+    
+  }
+  
+  #header {
+    box-sizing: border-box;
+    height: 80px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #121f33;
+  }
+  
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    color: #f1f1f1;
+    
+  }
+  
+  #btn-mobile {
+    display: none;
+    color: crimson;
+    
+    
+  }
+  
+
+.container_about{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+.myFoto{
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    background-color: crimson;
+    box-shadow: 0px 0px 5px rgb(31, 30, 30);
+    animation: pulse 2s infinite;
+    margin-left: 200px;
+ 
+}
+.myFoto img{
+    width: 330px;
+    height: 330px;
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(168, 63, 57, 0.4);
+    }
+    5% {
+        transform: scale(1.01);
+    }
+    15% {
+        transform: scale(1);
+    }
+    70% {
+        box-shadow: 0 0 0 50px rgba(168, 63, 57, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 100px rgba(168, 63, 57, 0);
+    }
+}
+.about{
+    
+}
+.about h2{
+    color:crimson;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: -100px;
+    border-bottom:5px solid crimson;
+    
+}
+.about p{
+    color: white;
+    width: 400px;
+    margin-left: 50px;
+}
+.hello{
+    position: relative;
+    top:-90px
+}
+.about a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 600;
+  
+}
+.about a:hover{
+    background-color: crimson;
+    border: none;
+    border: 2px solid crimson;
+}
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  .skills p{
+    color: white;
+  }
+  .skills h1{
+      color: white;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 14px;
+    background: #121f33;
+    border-radius: 3px;
+  }
+  
+  .skill-per{
+    height: 14px;
+    background: crimson;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 2px 3px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(65%);
+  }
+  
+  .skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+.box ul li{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+  opacity: 0;
+  background: radial-gradient(crimson,transparent,transparent);
+  bottom: 0;
+  left: 10vw;
+  animation: animate 15s linear infinite;
+}
+.box ul li:nth-child(2){
+    left: 37vw;
+    animation-delay: 2s;
+}
+.box ul li:nth-child(3){
+    left: 25vw;
+    animation-delay: 4s;
+}
+.box ul li:nth-child(4){
+    left: 60vw;
+    animation-delay: 6s;
+}
+.box ul li:nth-child(5){
+    left: 75vw;
+    animation-delay: 6s;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+        border: 0;
+    }
+    100%{
+        transform: scale(10);
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
+.projects h1{
+  color: white;
+  margin-left: 490px;
+}
+
+.team-area{
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.single-team{
+  width: 360px;
+  height: 400px;
+  padding: 24px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s ease-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0,0.5);
+}
+.single-team:hover{
+  transform: translateY(15px);
+}
+.single-team:hover:before{
+ opacity: 1;
+}
+.single-team:hover .team-text{
+opacity: 1;
+transform: translateY(0);
+}
+.single-team:before{
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#000, transparent);
+  z-index: 2;
+  transition: .5s;
+  opacity: 0;
+
+}
+.single-team img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.single-team .team-text{
+  position: relative;
+  z-index: 3;
+  color:#fff;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+.team-text h2{
+  margin: 0;
+  letter-spacing: 3px;
+}
+.team-text p{
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.team-text a{
+  padding: 10px;
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  border-bottom: none;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+.p_h1{
+  padding: 0px;
+  margin: 0px;
+  color: crimson;
+}
+.contact_text h1{
+  color: white;
+  margin-left: 490px;
+}
+.span_h1{
+  padding: 0px;
+  margin: 0px;
+  color: crimson;
+}
+.container_contact{
+  margin-left: 360px;
+  margin-top: 20px;
+  width: 600px;
+  height: 580px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.container_contact h1{
+  color: #f1f1f1;
+  padding: 10px;
+}
+.container_contact form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.container_contact label{
+  color: crimson;
+  font-size: 20px;
+  font-weight: 600; 
+}
+.container_contact .name, .email{
+  margin-left: -220px;
+}
+.container_contact .messagem{
+  margin-left: -165px;
+}
+.container_contact input{
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+.container_contact input:hover{
+  border-bottom: 5px solid crimson;
+}
+.container_contact input[type="submit"]{
+  border: none;
+  background-color: #121f33;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+.container_contact input[type="submit"]:hover{
+  background-color: crimson;
+}
+.container_contact .messege{
+  height: 100px;
+}
+.container_contact a{
+  border: none;
+  background-color: crimson;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.container_contact a:hover{
+  background-color: #121f33;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    color:#f3eae8;
+    position: relative;
+    top:250px;
+    left: 0;
+}
+.icons{
+ margin-left: 390px;
+ 
+}
+.icons a{
+  padding: 20px;
+  color: white;
+  background-color: crimson;
+  border-radius: 20px;
+}
+.icons i{
+  padding: 1px;
+  font-size: 30px;
+  position: relative;
+  top:5px;
+}
+
+footer p{
+    margin-left: 450px;
+}
+
+@media (max-width: 600px){
+  
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #121f33;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+      }
+      #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+      #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        color: white;
+        
+
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 30px;
+        
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+    .myFoto{
+        width: 270px;
+        height: 270px;
+        border-radius: 100%;
+        background-color: crimson;
+        animation: pulse 2s infinite;
+        margin-left: -50px;
+        margin-top: 200px;
+        position: relative;
+        left: 100px;
+    }
+    .myFoto img{
+        width: 260px;
+        height: 260px;
+        border-radius: 100%;
+       position: relative;
+       left: -1px;
+        
+    }
+    .about h2{
+        color:crimson;
+        font-size: 40px;
+        margin-left: -205px;
+        margin-top: -230px;
+        border-bottom:5px solid crimson;
+        
+    }
+    .hello{
+        position: relative;
+        top:-220px;
+    }
+    .about p{
+        color: white;
+        width: 350px;
+        margin-left: -205px;
+        font-size: 20px;
+    }
+    .about a{
+        text-decoration: none;
+        color: white;
+        margin-left: -90px;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-weight: 600;
+        position: relative;
+        top: 350px;
+      
+    }
+    .skills{
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+        margin-left: 20px;
+        margin-top: 150px;
+      }
+  
+      .skills h1{
+          color: white;
+      }
+      .box ul li:nth-child(2){
+        left: 20vw;
+        animation-delay: 2s;
+    }
+    .box ul li:nth-child(3){
+        left: 25vw;
+        animation-delay: 4s;
+    }
+    .box ul li:nth-child(4){
+        left: 60vw;
+        animation-delay: 6s;
+    }
+    .box ul li:nth-child(5){
+        left: 30vw;
+        animation-delay: 6s;
+    }
+    .projects h1{
+      color: white;
+      margin-left: 45px;
+      font-size: 25px;
+    }
+    .team-area{
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .single-team{
+      width: 380px;
+      height: 300px;
+      padding: 35px;
+      background: #fff;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      transition: .6s ease-out;
+      box-shadow: 0 10px 10px rgba(0, 0, 0,0.5);
+    }
+
+    .contact_text h1{
+      color: white;
+      margin-left: 50px;
+    }
+    .span_h1{
+      padding: 0px;
+      margin: 0px;
+      color: crimson;
+    }
+    .container_contact{
+      margin-left: 5px;
+      margin-top: 20px;
+      width: 370px;
+      height: 650px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    .container_contact h1{
+      color: #f1f1f1;
+      padding: 10px;
+      font-size: 25px;
+
+    }
+      footer{
+        width: 100%;
+        height: 100px;
+        color:#f3eae8;
+        position: relative;
+        top:250px;
+        left: 0;
+    }
+    footer p{
+        margin-left: 100px;
+    }
+    .icons{
+      margin-left: 100px;
+      display: flex;
+     
+      
+     }
+     .icons a{
+       margin: 10px;
+       color: white;
+       background-color: crimson;
+       border-radius: 20px;
+       height: 50px;
+       width: 50px;
+     }
+     .icons i{
+       position: relative;
+       top:-10px;
+       left: -10px;
+     
+     }
+     .fa-instagram{
+         margin-left:1px;
+     }
+   .fa-youtube{
+     margin-left: -2px;
+   }
+}
